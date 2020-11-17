@@ -7,7 +7,7 @@ translator = Translator()
 
 
 def translate(text, src="auto", dest="en"):
-    """Translate `text` from `src` language to `dest`"""
+    """ Translate `text` from `src` language to `dest`"""
     return translator.translate(text, src=src, dest=dest).text
 
 
