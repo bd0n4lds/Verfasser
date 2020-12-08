@@ -33,7 +33,7 @@ if __name__ == "__main__":
         dirname = os.path.dirname(target)
         try:
             filename, ext = basename.split(".")
-        except:
+        except FileNotFoundError:
             # no extension
             filename = basename
             ext = ""

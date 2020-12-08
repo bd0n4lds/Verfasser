@@ -16,6 +16,11 @@ print(f"{translation.origin} ({translation.src}) --> {translation.text} ({transl
 translation = translator.translate("Wie gehts ?", src="de")
 print(f"{translation.origin} ({translation.src}) --> {translation.text} ({translation.dest})")
 # print all translations and other data
+
+# specify source language
+translation = translator.translate("Hoe gaat het met je?", src="nl")
+print(f"{translation.origin} ({translation.src}) --> {translation.text} ({translation.dest})")
+# print all translations and other data
 pprint(translation.extra_data)
 
 # translate more than a phrase
